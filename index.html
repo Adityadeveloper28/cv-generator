@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.gstatic.com/s/muli/v28/7Auwp_0qiz-afTLGLQjUwkQ.woff2" as="font"
+        type="font/woff2" crossorigin="">
+    <link rel="preload"
+        href="https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtPK-F2qC0s.woff2"
+        as="font" type="font/woff2" crossorigin="">
+    <title>Document</title>
+    <style type="text/css">
+        .dropdown-menu li {
+            position: relative;
+        }
+
+        .dropdown-menu .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -10px;
+            padding-bottom: 5px;
+        }
+
+        .dropdown-menu>li:hover>.submenu {
+            display: block;
+        }
+
+        .img-fluid {
+            max-width: 10%;
+        }
+
+        .page-header p {
+            margin-left: 50rem;
+            padding: 10rem 5rem 0rem 0rem;
+        }
+
+        .page-header button {
+            margin-left: 50rem;
+        }
+
+        .container-fluid {
+            max-height: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .page-header>.container-fluid {
+            max-height: 100%;
+            font-weight: 40px;
+
+        }
+
+        p {
+            margin-top: 1;
+            margin-bottom: 1rem;
+        }
+
+        .cards-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .card {
+            margin: 0 0.5em;
+            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+            border: none;
+            border-radius: 0;
+        }
+
+        .carousel-inner {
+            padding: 1em;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: #e1e1e1;
+            width: 5vh;
+            height: 5vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @media (min-width: 768px) {
+            .card img {
+                height: 11em;
+            }
+        }
+    </style>
+
+</head>
+<a href="https://myexpertcv.netlify.app/cv-form"></a>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="2-removebg-preview.png" alt="" class="img-fluid btn">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">templates</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            create cv
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">sample</a></li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    profession
+                                </a>
+
+                                <ul class="dropdown-menu submenu">
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                            role="button">accounting</a>
+                                        <ul class="dropdown-menu submenu">
+                                            <li><a class="dropdown-item" href="#">accountant</a></li>
+                                            <li><a class="dropdown-item" href="#">accounting clerk</a></li>
+                                            <li><a class="dropdown-item" href="#">staff accountant</a></li>
+                                            <li><a class="dropdown-item" href="#">general accountant</a></li>
+                                            <li><a class="dropdown-item" href="#">billing staff</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                            role="button">finance</a>
+                                        <ul class="dropdown-menu submenu">
+                                            <li><a class="dropdown-item" href="#">Loan Officer
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Collections Representative</a></li>
+                                            <li><a class="dropdown-item" href="#">Finance Intern</a></li>
+                                            <li><a class="dropdown-item" href="#">general accountant</a></li>
+                                            <li><a class="dropdown-item" href="#">Budget Analyst</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                            role="button">art and designed</a>
+                                        <ul class="dropdown-menu submenu">
+                                            <li><a class="dropdown-item" href="#">User Experience (UX) Designer
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Music
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Illustrator
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Filmmaker
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Fashion Designer
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Artist
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                            role="button">Computer Sciences & Information Technology</a>
+                                        <ul class="dropdown-menu submenu">
+                                            <li><a class="dropdown-item" href="#">Information Technology (IT)
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Technical Support
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Quality Assurance (QA)
+
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">IT Project Manager
+
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">IT Auditor
+
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">Computer Consultant
+
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Nested Action 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Nested Action 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    cover letter
+                                </a>
+
+                                <ul class="dropdown-menu submenu">
+                                    <li class="dropend">
+                                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                            role="button">accounting</a>
+                                        <ul class="dropdown-menu submenu">
+                                            <li><a class="dropdown-item" href="#">accountant</a></li>
+                                            <li><a class="dropdown-item" href="#">accounting clerk</a></li>
+                                            <li><a class="dropdown-item" href="#">staff accountant</a></li>
+                                            <li><a class="dropdown-item" href="#">general accountant</a></li>
+                                            <li><a class="dropdown-item" href="#">billing staff</a></li>
+                                        </ul>
+                                </ul>
+                            </li>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">know about us</a></li>
+                </ul>
+                </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+
+                    <button class="btn btn-outline-success" type="submit">login / register</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header class="page-header gradient"
+        style="background: url(https://cv-host.onrender.com/images/img1.jpg); background-size: cover;background-repeat:no-repeat;"">
+        <div class=" container">
+        <div class="row" style="padding-bottom: 172px;padding-right: 1px;">
+            <div class="col--8">
+
+            </div>
+            <div class="col-lg-4">
+                <p style="color: #b01818; font-weight: bold; font-size: 40px;">
+                    create Your professional Resume with the expert
+                </p>
+                <button class="btn btn-primary"><a href="https://cv-host.onrender.com/Form.html" style="color:white;">
+                        create Resume
+                    </a></button>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <div class="container-fluid template" style="    background: rgb(240, 240, 240);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);height: auto;width: auto;padding-bottom: 134px;">
+
+        <h1 style="text-align: center;">Make a CV that stands out</h1>
+
+
+        <p style="text-align: center;">Increase your chances of getting a job by creating your resume with our well
+            designed resume templates</p>
+        <div class="row ">
+            <div class="col-md-4" style="">
+                <img src="https://cv-host.onrender.com/images/T1.PNG"
+                    style="width: 510px; height: 620px; object-fit:contain;" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-md-4"> <img src="https://cv-host.onrender.com/images/T1.PNG"
+                    style="width: 510px; height: 620px; object-fit:contain;" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-md-4"> <img src="https://cv-host.onrender.com/images/T1.PNG"
+                    style="width: 510px; height: 620px; object-fit:contain;" class="img-thumbnail" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="container features">
+        <h1>Features</h1>
+        <div class="row">
+            <div class="card mb-3" style="max-width: 100%; justify-content: center">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://cv-host.onrender.com/images/R1.png" class="img-fluid rounded-start mt-4 ml-4"
+                            style="height: 73%; width: 50%;object-fit: contain;max-width: 73%;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Quick and easy resume builder</h2>
+                            <p class="card-text" style="padding-top: 2.5rem">
+                                With our online CV maker, it is simple for anyone to quickly
+                                create a professional CV. Enter your personal details and
+                                begin filling out your CV content. Finally, choose one of our
+                                available CV layouts, and download your CV.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mb-3" style="max-width: 100%">
+                <div class="row g-0">
+                    <div class="col-md-4" style="justify-content: center">
+                        <img src="https://cv-host.onrender.com/images/R2.png" class="img-fluid mt-3 ml-4"
+                            style="height: 90%; width: 60%;object-fit: contain;max-width: 73%;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">More likely to land a job</h2>
+                            <p class="card-text" style="padding-top: 2.5rem">
+                                With a representative and professional CV, you will stand out
+                                amongst all other applicants. You are also up to 65% more
+                                likely to be invited to an interview.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mb-3" style="max-width: 100%">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://cv-host.onrender.com/images/R3.png"
+                            class="img-fluid rounded-start mx-auto mt-2"
+                            style="width: 240px; height: 210px;object-fit: contain;max-width: 73%;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Oragnize your applications</h2>
+                            <p class="card-text">
+                                Often, it is important to be able to tailor your CV based on
+                                the job you wish to apply for. With CV maker, you can create
+                                and manage several different CVs in an organised way through
+                                your own personal account hub.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid page" style="    margin-top: 2.5rem;
+      background: rgb(240, 240, 240);
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);">
+        <div class="row" style="margin-left: -15px;margin-right: -15px;">
+            <h2 class="page-title" style="    margin: 4rem 0rem 2.5rem 7rem;
+          ">
+                Boost your chances of getting that job you've been dreaming of
+            </h2>
+            <p class="page-title-para" style="    margin: 0.5rem 0rem 2.5rem 7rem;
+          ">
+                With CV maker, you can quickly and easily create a distinctive and
+                professional CV within 15 minutes.
+            </p>
+        </div>
+        <div class="row" style="margin: 0rem 0rem 2.5rem 7rem;margin-left: -15px;margin-right: -15px;" height: 100%; ">
+            <div class=" button-container" style="margin: 0rem 0rem 2.5rem 7rem; height: 100%">
+            <button type="button" class="btn btn-outline-dark">
+                <a href="https://cv-host.onrender.com/Form.html" style="text-decoration: none">Create Your Resume</a>
+            </button>
+        </div>
+    </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="cards-wrapper">
+                    <div class="card d-none d-md-block">
+                        ] <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+
+                        <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                        <div class="card-body">
+                            <img src="https://cv-host.onrender.com/images/T1.PNG"
+                                style="width: 510px; height: 620px; object-fit:contain;" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
+    <div class="container-fuild examples">
+        <div class="row" style="padding-left: 15px;">
+            <h1 style="text-align: center;">resume examples</h1>
+            <p style="text-align: center;display: block;">Need help building your resume? Get started with our resume
+                examples, which are based on thousands of winning resumes. You can build the perfect resume for the job
+                you want using our comprehensive directory of resume examples.</p>
+            <div class="col">
+                <img src="https://www.resumebuilder.com/wp-content/themes/resumebuilder/assets/images/resume-examples-img.svg"
+                    alt="">
+            </div>
+            <div class="col">
+
+                <ul>
+                    <li><a href="/accountant-resume-examples/" id="a-wkQpNu" aria-label="Accountant yi4flm"
+                            tabindex="7">Accountant</a></li>
+                    <li><a href="/administrative-assistant-resume-examples/" id="a-8eEjvN"
+                            aria-label="Administrative Assistant PExdCo" tabindex="8">Administrative Assistant</a></li>
+                    <li><a href="/artist-resume-examples/" id="a-kIoYPc" aria-label="Artist WPJNCb"
+                            tabindex="9">Artist</a></li>
+                    <li><a href="/business-resume-examples/" id="a-k2FJHm" aria-label="Business B6Vezg"
+                            tabindex="10">Business</a></li>
+                    <li><a href="/caregiver-resume-examples/" id="a-Yyx41N" aria-label="Caregiver aqAyKP"
+                            tabindex="11">Caregiver</a></li>
+                    <li><a href="/cashier-resume-examples/" id="a-fmrin4" aria-label="Cashier TBIXdi"
+                            tabindex="12">Cashier</a></li>
+                    <li><a href="/cna-resume-examples/" id="a-vJIpMh" aria-label="Certified Nursing Assistant l1Yh5b"
+                            tabindex="13">Certified Nursing Assistant</a></li>
+                    <li><a href="/college-resume-examples/" id="a-oxIJuq" aria-label="College 1YF2ZV"
+                            tabindex="14">College</a></li>
+                    <li><a href="/computer-science-resume-examples/" id="a-qV89GZ" aria-label="Computer Science Hq9BrY"
+                            tabindex="15">Computer Science</a></li>
+                    <li><a href="/customer-service-resume-examples/" id="a-gS4NMU"
+                            aria-label="Customer Service Representative C6KM02" tabindex="16">Customer Service
+                            Representative</a></li>
+                    <li><a href="/dental-assistant-resume-examples/" id="a-FpxE30" aria-label="Dental Assistant qU0C9f"
+                            tabindex="17">Dental Assistant</a></li>
+                    <li><a href="/engineering-resume-examples/" id="a-SmwHPo" aria-label="Engineering 6jf7LP"
+                            tabindex="18">Engineering</a></li>
+                    <li><a href="/esthetician-resume-examples/" id="a-akg6hm" aria-label="Esthetician L51gdN"
+                            tabindex="19">Esthetician</a></li>
+                    <li><a href="/executive-resume-examples/" id="a-wiSlf6" aria-label="Executive mhDWPs"
+                            tabindex="20">Executive</a></li>
+                    <li><a href="/financial-analyst-resume-examples/" id="a-pWX97I"
+                            aria-label="Financial Analyst CDvywM" tabindex="21">Financial Analyst</a></li>
+                    <li><a href="/high-school-resume-examples/" id="a-2GeuA1" aria-label="High School t1umBq"
+                            tabindex="22">High School</a></li>
+                    <li><a href="/housekeeping-resume-examples/" id="a-lrHKtV" aria-label="Housekeeping prysSh"
+                            tabindex="23">Housekeeping</a></li>
+                    <li><a href="/information-technology-it-resume-examples/" id="a-I6yNiF"
+                            aria-label="Information Technology IT 5sh0Kj" tabindex="24">Information Technology IT</a>
+                    </li>
+                    <li><a href="/internship-resume-examples/" id="a-mHAFBs" aria-label="Internship JqMBnQ"
+                            tabindex="25">Internship</a></li>
+                    <li><a href="/management-resume-examples/" id="a-0numFo" aria-label="Management mLE167"
+                            tabindex="26">Management</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="/mba-resume-examples/" id="a-SR6M2C" aria-label="MBA YrTxNX" tabindex="27">MBA</a></li>
+                    <li><a href="/medical-sales-resume-examples/" id="a-bMwl7n" aria-label="Medical Sales D4Oby6"
+                            tabindex="28">Medical Sales</a></li>
+                    <li><a href="/nursing-resume-examples/" id="a-Y6X4ec" aria-label="Nursing tGV1sR"
+                            tabindex="29">Nursing</a></li>
+                    <li><a href="/nursing-student-resume-examples/" id="a-qOxXzC" aria-label="Nursing Student 4muDR0"
+                            tabindex="30">Nursing Student</a></li>
+                    <li><a href="/operations-manager-resume-examples/" id="a-6siDdK"
+                            aria-label="Operations Manager tTpoMj" tabindex="31">Operations Manager</a></li>
+                    <li><a href="/pharmacist-resume-examples/" id="a-w7qVz0" aria-label="Pharmacist 0pXAnB"
+                            tabindex="32">Pharmacist</a></li>
+                    <li><a href="/phlebotomist-resume-examples/" id="a-UBYMaQ" aria-label="Phlebotomist S7gmLx"
+                            tabindex="33">Phlebotomist</a></li>
+                    <li><a href="/product-manager-resume-examples/" id="a-oEGbw1" aria-label="Product Manager eX5a84"
+                            tabindex="34">Product Manager</a></li>
+                    <li><a href="/project-manager-resume-examples/" id="a-F5WfMi" aria-label="Project Manager i2uvw6"
+                            tabindex="35">Project Manager</a></li>
+                    <li><a href="/receptionist-resume-examples/" id="a-etZLdb" aria-label="Receptionist WAPSIY"
+                            tabindex="36">Receptionist</a></li>
+                    <li><a href="/registered-nurse-resume-examples/" id="a-j65d4c" aria-label="Registered Nurse yazNo6"
+                            tabindex="37">Registered Nurse</a></li>
+                    <li><a href="/sales-resume-examples/" id="a-oZMWk5" aria-label="Sales gD9ZWJ"
+                            tabindex="38">Sales</a></li>
+                    <li><a href="/sales-associate-resume-examples/" id="a-5oM2rl" aria-label="Sales Associate fo7Wir"
+                            tabindex="39">Sales Associate</a></li>
+                    <li><a href="/server-resume-examples/" id="a-uFgd8m" aria-label="Server HbAvB9"
+                            tabindex="40">Server</a></li>
+                    <li><a href="/social-work-resume-examples/" id="a-ocJrTP" aria-label="Social Work b0iymc"
+                            tabindex="41">Social Work</a></li>
+                    <li><a href="/software-developer-resume-examples/" id="a-loXzSx"
+                            aria-label="Software Developer QOEayW" tabindex="42">Software Developer</a></li>
+                    <li><a href="/software-engineer-resume-examples/" id="a-ixWBFh"
+                            aria-label="Software Engineer nsfhmP" tabindex="43">Software Engineer</a></li>
+                    <li><a href="/stay-at-home-mom-resume-examples/" id="a-O7mJhn" aria-label="Stay-at-Home Mom NTAZnr"
+                            tabindex="44">Stay-at-Home Mom</a></li>
+                    <li><a href="/resume-examples-for-students/" id="a-xZH6q7" aria-label="Student APxUW0"
+                            tabindex="45">Student</a></li>
+                    <li><a href="/teacher-resume-examples/" id="a-ahNmB1" aria-label="Teacher R184bB"
+                            tabindex="46">Teacher</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center features-list-heading bottom-spacing top-spacing " style="  padding: 20px;  --wp--preset--font-size--normal: 16px;
+        --wp--preset--font-size--huge: 42px;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+        --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+        --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+        --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+        --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+        --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+        --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+        --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+        --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        -webkit-box-sizing: border-box;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;">
+            <h2 style="    --wp--preset--font-size--normal: 16px;
+            --wp--preset--font-size--huge: 42px;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+            -webkit-font-smoothing: antialiased;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline;
+            -webkit-box-sizing: border-box;
+            font-family: "Playfair Display",serif;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 52px;
+            margin-bottom: 30px;">A Quick and Easy Way To Create Your Professional Resume</h2>
+        </div>
+        <div class="features-list-wrap flex" style=" padding: 20px;   --wp--preset--font-size--normal: 16px;
+        --wp--preset--font-size--huge: 42px;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+        --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+        --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+        --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+        --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+        --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+        --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+        --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+        --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        -webkit-box-sizing: border-box;
+        justify-content: space-between;
+        display: flex;">
+            <div class="left" style="    max-width: 584px;
+            ">
+                <ul class="features-list" style="    padding-left: 0;
+                ">
+                    <li style="    margin-bottom: 35px;font-family: "Muli",sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                
+                    ">
+                        <p><span class="checkIcon"></span>30+ Professional Resume Templates</p>
+                        <p class="desc">Choose from over 30 modern and professional templates, all of which can be
+                            customized to your liking.</p>
+                    </li>
+                    <li style="    margin-bottom: 35px;font-family: "Muli",sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                    ">
+                        <p><span class="checkIcon"></span>Fast, Free, and Easy to Use</p>
+                        <p class="desc">Our resume builder lets you easily and quickly create this important document
+                            using our resume wizard.</p>
+                    </li>
+                    <li style="    margin-bottom: 35px;font-family: "Muli",sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                    ">
+                        <p><span class="checkIcon"></span>Robust Text Editor</p>
+                        <p class="desc">Our text editor has everything you need to customize your resume. Choose
+                            different fonts, sizes, bullets, and much more.</p>
+                    </li>
+                    <li style="    margin-bottom: 35px;font-family: "Muli",sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                    ">
+                        <p><span class="checkIcon"></span>Premium Feature: PDF Resume Downloads</p>
+                        <p class="desc">Download your resume and send it straight to the hiring manager. Whatever format
+                            you choose, we’ve got you covered. TXT downloads are available for free for all users.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="block-center" style="
+            max-width: 584px;">
+                <figure style="    display: block;
+                "><img decoding="async" src="https://www.resumebuilder.com/wp-content/themes/resumebuilder/assets/images/img-1.svg"
+                        data-src="/wp-content/themes/resumebuilder/assets/images/img-1.svg"
+                        alt="Create Your Professional Resume" class="img-responsive" id="img-NIc1sd"
+                        title="Create Your Professional Resume" style="max-width: 100%;
+                        height: auto;"></figure>
+            </div>
+        </div>
+        <div class="page-links flex flexend" style="    --wp--preset--font-size--normal: 16px;
+        --wp--preset--font-size--huge: 42px;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+        --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+        --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+        --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+        --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+        --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+        --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+        --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+        --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        -webkit-box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;">
+            <p style="    --wp--preset--font-size--normal: 16px;
+            --wp--preset--font-size--huge: 42px;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline;
+            -webkit-box-sizing: border-box;
+            color: #0091ff;
+            text-decoration: none;
+            
+    background: url(../images/arrow-blue.svg) no-repeat;">
+                <a href="/resume-examples/" class="arrowLink viewAllExample" id="a-DtxzLw"
+                    aria-label="View all examples a8Zemx" tabindex="47">View all examples -></a>
+            </p>
+        </div>
+    </div>
+    <div class="main" style="padding-left: 50px;
+   padding-right: 50px;">
+        <div>
+            <footer style="background-color: #b01818;">
+                <div class="container fluid">
+                    <div class="container row">
+                        <div class="col-8">
+                            <img src="2-removebg-preview.png" alt="" style="padding-top: 70px;">
+                        </div>
+                        <div class="col-4">
+                            <h1>Resume Builder
+                                Resume Examples
+                                Resume Templates
+                                About Us
+                                Contact Us
+                                Privacy Policy
+                                Terms of Service
+                                Press</h1>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
